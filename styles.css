@@ -1,0 +1,178 @@
+:root {
+    --pastel-pink: #FFB6C1;
+    --pastel-purple: #DDA0DD;
+    --pastel-blue: #87CEFA;
+    --pastel-red: #FF6B6B;
+    --soft-white: #FFF5EE;
+}
+
+body {
+    font-family: 'Chewy', cursive;
+    background-color: var(--soft-white);
+    color: #333;
+}
+
+.bg-pastel-pink {
+    background-color: var(--pastel-pink) !important;
+}
+
+.bg-pastel-purple {
+    background-color: var(--pastel-purple) !important;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.navbar-brand {
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-size: 2.2rem; /* Ajusta el tamaño según lo que necesites */
+    font-weight: lighter; /* Opcional: para hacer el texto más grueso */
+}
+
+section h2 {
+    color: var(--pastel-purple);
+    font-family: 'Caveat', cursive;
+}
+
+.menu-image {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.quiz-container {
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 20px;
+    padding: 30px;
+}
+.option-buttons, #flavors-container, #toppings-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.type-btn, .flavor-btn, .topping-btn {
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.type-btn:hover, .flavor-btn:hover, .topping-btn:hover {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #45a049;
+}
+
+.type-btn.selected, .flavor-btn.selected, .topping-btn.selected {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #45a049;
+}
+
+.next-btn {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.next-btn:hover {
+    background-color: #007299;
+}
+
+#result-container {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#michi-type {
+    color: #333;
+    font-size: 24px;
+}
+
+#michi-description, #crepe-recommendation {
+    color: #666;
+}
+
+#options .btn {
+    background-color: var(--pastel-pink);
+    border: none;
+    color: white;
+    transition: transform 0.3s;
+}
+
+#options .btn:hover {
+    transform: scale(1.05);
+    background-color: var(--pastel-purple);
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 80px; /* Cambia este valor para moverlo más arriba */
+    right: 30px;
+    margin-right: 3%;
+    z-index: 1000;
+}
+
+.whatsapp-icon {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+footer a {
+    color: white;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--pastel-blue);
+}
+
+#menu h2 {
+    font-size: 3rem; /* Ajusta el tamaño según lo que necesites */
+    font-weight: bold; /* Aplica negrita */
+    color: var(--pastel-purple); /* Opcional: Cambia el color si lo deseas */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .menu-image {
+        max-width: 100%;
+    }
+
+    .logo {
+        width: 100px; /* Reduce el tamaño del logo */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem; /* Ajusta el tamaño del texto */
+    }
+}
